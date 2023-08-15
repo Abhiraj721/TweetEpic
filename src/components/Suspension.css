@@ -1,0 +1,86 @@
+.pagewindow{
+    background-color: #ced5dc;
+    width: 452px;
+height: 423px;
+    font-family: "Twitter Chirp", system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+
+}
+@media (max-width: 767px) {
+    .pagewindow {
+      width: 100vw;
+   margin-left: 12px;
+   
+    }
+  }
+  
+.abovenav{
+    height: 44px;
+    background-color: #ced5dc;
+    width: 452px;
+    position: relative;
+    right: 12px;
+}
+@media (max-width: 767px) {
+    .abovenav {
+      width: 100vw;
+    }
+  }
+.suspendprofilepic{
+    position: relative;
+    height: 78px;
+    width: 84px;
+    right: 167px;
+    bottom: 163px;
+    border-radius: 50%;
+    border: 5px solid rgb(255, 255, 255);
+}
+@media (max-width: 767px) {
+    .suspendprofilepic {
+        right: 117px;
+    }
+  }
+
+.midpagesuspend{
+    height: 140px;
+    background-color: rgb(255, 255, 255);
+    width: 452px;
+    position: relative;
+    right: 12px;
+}
+@media (max-width: 767px) {
+    .midpagesuspend {
+       width: 100vw;
+    }
+  }
+  .titleofnavcard{
+    font-family: 'Sofia';
+    font-size: 19px;
+    background-color: rgb(244, 247, 250);
+  }
+
+  .suspendname{
+    position: relative;
+    width: 240px;
+    text-align: left;
+    font-size: 22px;
+   bottom:163px;
+   right:4px
+  }
+  .suspendusername{
+    position: relative;
+    width: 200px;
+    text-align: left;
+    font-size: 12px;
+   bottom:177px;
+   color: rgb(131, 131, 131);
+   right:4px
+  }
+  .noticeofsuspend{
+    font-size: 25px;
+    position: relative;
+    bottom: 134px;
+  }
+  .noticebrief{
+    position: relative;
+    bottom: 134px;
+  }

@@ -1,0 +1,174 @@
+.replytweet{
+  font-family: "Inter", "Helvetica Neue", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    width: 500px;
+    text-align: left;
+    position: relative;
+    margin: 0 auto;
+    padding-top: 5px;
+    border: 0.1px solid rgb(119, 119, 119);
+     background-color: #ffffff;
+   }
+   @media (max-width: 767px) {
+     .replytweet {
+       width: 100vw;
+     }
+   }
+   
+   .replyprofile{
+   height: 43px;
+   width: 43px;
+   border-radius: 50%;
+   position: relative;
+   left:13px;
+   }
+   @media (max-width: 767px) {
+     .replyprofile {
+       right: 140px;
+     }
+   }
+   .replyname{
+    position: relative;
+    left: 23px;
+    max-width: 167px;
+    white-space: nowrap;
+    overflow: hidden;
+   }
+   .replynav{
+    display: flex;
+   }
+   .replyusername{
+    margin-left: 33px;
+    max-width: 140px;
+    white-space: nowrap;
+    overflow: hidden;
+   }
+   .replydate{
+    margin-left: 6px;
+    max-width: 70px;
+    white-space: nowrap;
+    overflow: hidden;
+   }
+   .replymsg{
+position: relative;
+left: 64px;
+width: 78%;
+   }
+   @media (max-width: 767px) {
+    .replymsg {
+        width: 80vw;
+    }
+  }
+  .threebtns{
+    position: absolute;
+    bottom: 108px;
+    height: 24px;
+   right:36px
+  }
+  @media (max-width: 767px) {
+    .threebtns {
+        right:13px
+
+    }
+}
+.buttonsContainer{
+    width: 80%;
+   
+}
+.threedotbtn{
+    background-color: transparent;
+    border: none;
+}
+@media (max-width: 767px) {
+    .buttonsContainer {
+        width: 83%;
+    }
+}
+.replystatsbtn{
+    margin-left: 3px;
+    position: relative;
+    left: 56px;
+}
+@media (max-width: 767px) {
+    .replystatsbtn {
+        right: 16px;
+    }
+}
+.lastStatebtn{
+    margin-right: 0px !important;
+}
+.replybtnaswell{
+    margin-left: 99px ;
+}
+@media (max-width: 767px) {
+    .replybtnaswell {
+        margin-left: 66px;
+    }
+}
+.verticaline{
+position: absolute;
+left: 35px;
+border-color: rgb(112, 114, 111) !important;
+top: 48px;
+height: 70%;
+}
+.statsvalreply{
+    position: absolute;
+
+}
+.replyinputs {
+    display: inline-block;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    padding: 14px;
+    margin-bottom: 20px;
+  }
+  
+  
+  .replyinputs label {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .downloadreply{
+   position: relative;
+   margin-top: 12px;margin-bottom: 12px;
+   bottom: 180px;
+  }
+  
+  .replyinputs input[type="file"]
+ {
+    width: 200px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  .replyinputs input[type="file"]::-webkit-file-upload-button {
+    display: none;
+  }
+  .replyinputs input[type="file"] {
+    cursor: pointer;
+  }
+  
+  .replyinputs input[type="radio"] {
+    margin: 0 5px;
+    width: 20px;
+  }
+  
+  /* Add any additional styles for the profile image input and radio buttons */
+  .replyinputs .profileimage {
+    /* Add any additional styles for the profile image input */
+  }
+  
+  .replyinputs .verified,
+  .replyinputs .nonverified {
+    /* Add any additional styles for the radio buttons */
+  }
+  
+  .replyimg{
+    margin-left: 64px;
+    width: 78%;
+    margin-bottom: 6px;
+  }
+.alertimg{
+  width: 00px;
+}

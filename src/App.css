@@ -1,38 +1,492 @@
 .App {
   text-align: center;
+
+  font-family: 'Baloo Thambi 2';
 }
 
-.App-logo {
-  height: 40vmin;
+
+/* radio css */
+input[type="radio"] {
+  /* Hide the default radio button */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  /* Set the custom tick size */
+  width: 20px;
+  height: 20px;
+  /* Style the custom tick */
+  border: 2px solid #007bff;
+  border-radius: 50%;
+  margin-right: 5px;
+  position: relative;
+  top: 4px;
+}
+.head{
+  background-color: rgb(242, 243, 243) !important;
+  font-size: 28px;
+  color: #6da7e5;
+  font-family: 'raleway';
+  margin: 0  auto;
+  width: 94vw;
+ 
+}
+.footer{
+  background-color: #ccf0f3;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  font-family: "Raleway";
+  width: 94vw;
+  margin: 0 auto;
+
+}
+@media (max-width: 767px) {
+  .footer {
+    width: 100vw;
+
+  }
+}
+.navmain{
+  display: flex;
+  background-color: rgb(226, 222, 222);
+align-items: center;
+justify-content: center;
+}
+.mainhead{
+
+  font-size: 28px;
+  color: #6da7e5;
+  font-family: 'raleway';
+
+}
+@media (max-width: 767px) {
+  .head {
+    width: 100vw;
+
+  }
+}
+
+/* Style the custom tick when radio button is checked */
+input[type="radio"]:checked {
+  background-color: #007bff;
+}
+
+/* Style the custom tick when radio button is checked */
+input[type="radio"]:checked::before {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: 2px solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.navcard
+{
+ width: 220px;
+ margin: 0 auto;
+ box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+}
+
+@media (max-width: 767px) {
+  .navcard {
+    width: 168px;/* Adjust the max-width for better text wrapping on mobile */
+    padding-left: 6px;
+  }
+}
+.navcardbtn{
+  background-color: transparent;
+ width: 220px;
+  border: none;
+}
+@media (max-width: 767px) {
+  .navcardbtn {
+   margin-left: -7px;
+    width: 168px;/* Adjust the max-width for better text wrapping on mobile */
+
+  }
+}
+.navcard :hover{
+  background-color: skyblue;
+}
+
+.imgofnav{
+  height: 199px;
+  margin: 0 auto;
+
+  width: 210px;
+}
+@media (max-width: 767px) {
+  .imgofnav {
+  height: 153px;
+
+    width: 151px;/* Adjust the max-width for better text wrapping on mobile */
+  }
+}
+
+.tweet{
+
+width: 440px;
+
+text-align: left;
+margin: 0 auto;
+}
+@media (max-width: 767px) {
+  .tweet {
+    width: 340px;/* Adjust the max-width for better text wrapping on mobile */
+  }
+}
+.userpp
+{
+  border-radius: 50%;
+  position: relative;
+  width: 41px;
+  margin-left: 4px;
+  top: 5px;
+  margin-top: 3px;
+  margin-right: 8px;
+  height: 41px;
+
+}
+.userinfo
+{
+  position: relative;
+  bottom: 133px;
+  right: 193px;
+  display: inline-block;
+}
+[contenteditable="true"] {
+  border: 2px dashed;
+}
+.tweetimg
+{
+  position: relative;
+  bottom: 78px;
+  width: 441px;
+
+}
+@media (max-width: 767px) {
+  .tweetimg {
+   width: 95vw;
+  }
+}
+.name{
+position: relative;
+bottom: 41px;
+width: 88%;
+left: 53px;
+}
+@media (max-width: 767px) {
+  .name {
+   width: 84%;
+  }
+}
+  .bluetick
+  {
+    height: 19px;
+    fill: rgba(8, 120, 233, 0.859);
+  }
+.username
+{
+  position: relative;
+width: 88%;
+  bottom: 55px;
+  left: 54px;
+}
+@media (max-width: 767px) {
+  .username {
+   width: 84%;
+  }
+}
+.tweetcontent{
+  position: relative;
+  font-size: 19px;
+  bottom: 64px;
+  padding: 8px;
+}
+.time
+{
+  position: relative;
+  bottom: 74px;
+  margin-left: 7px;
+}
+hr{
+  opacity: 0.5;
+  height: 1px;
+  background-color: #9d9797;
+  border: none;
+}
+.line
+{
+  position: relative;
+  bottom: 54px;
+}
+.stats
+{
+  margin-left: 12px;
+  position: relative;
+  bottom: 44px;
+}
+.indiestats
+{
+  margin-left: 12px;
+}
+.statsval{
+  margin-right: 5px;
+}
+.line2
+{
+  position: relative;
+  bottom: 36px;
+}
+.buttonsContainer{
+  display: flex;
+  position: relative;
+  bottom: 11px;
+
+}
+.buttonsContainer svg{
+  height: 23px;
+}
+.tweetButton
+{
+  padding: 5px;
+  margin-right: 99px;
+}
+@media (max-width: 767px) {
+  .tweetButton {
+    margin-right: 65px;
+  }
+}
+.backradio{
+  margin-right: 12px;
+display: inline;
+}
+.labelback
+{
+  font-size: 15px;
+  margin-right: 7px;
+}
+@media (max-width: 767px) {
+  .labelback {
+    font-size: 14px;
+  }
+}
+.someinputs{
+
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  padding: 3px;
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 8px;
+line-height: 11px;
+}
+@media (max-width: 767px) {
+  .someinputs {
+    width: 96vw;
+    box-shadow: none;
+  }
+}
+/* Styles for the container div */
+
+
+/* Styles for the labels and inputs */
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+@media (max-width: 767px) {
+  label {
+    font-size: 15px;
+  }
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+input[type="file"] {
+  margin-top: 10px;
+  width: 134px;
+}
+
+/* Styles for the radio button labels and custom styling */
+.labelback {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Styles for the selected radio button label */
+.labelback:active,
+.labelback.checked {
+  background-color: #ccc;
+}
+
+/* Custom styles for the file input */
+.ppimg {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+/* Hide the default file input button */
+.ppimg::-webkit-file-upload-button {
+  display: none;
+}
+
+/* Style the custom file input label */
+.ppimg::before {
+}
+
+/* Style the file input label when a file is selected */
+.ppimg::after {
+  content: attr(data-file-name);
+  margin-left: 10px;
+}
+.imageoftweet{
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+.imageoftweet::-webkit-file-upload-button {
+  display: none;
+}
+.selectfont{
+display:-webkit-flex;
+justify-content: center;
+}
+#customFont
+{
+  width: 93px;
+}
+
+
+.editor {
+  
+  border: 2px dashed #ccc;
+  padding: 10px;
+  margin: 20px auto;
+  background-color: #fff;
+  max-width: 600px;
+  cursor: text;
+}
+
+.editor p {
+  margin: 10px 0;
+}
+
+.section1{
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  width: 94vw;
+margin: 0 auto;
+}
+@media (max-width: 767px) {
+  .section1 {
+    width: 100vw;
+
+    
+  }
+}
+.section2{
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+width: 94vw;
+margin: 0 auto;
+}
+@media (max-width: 767px) {
+  .section2 {
+    width: 100vw;
+
+    
+  }
+}
+.section3{
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  width: 94vw;
+margin: 0 auto;
+}
+@media (max-width: 767px) {
+  .section3 {
+    width: 100vw;
+
+    
+  }
+}
+.section4{
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  width: 94vw;
+margin: 0 auto;
+}
+@media (max-width: 767px) {
+  .section4 {
+    width: 100vw;
+
+    
+  }
+}
+
+
+/* button CSS */
+.button-85 {
+  align-items: center;
+  appearance: none;
+  border-radius: 4px;
+  border-style: none;
+  box-shadow: rgba(0, 0, 0, .2) 0 3px 1px -2px,rgba(0, 0, 0, .14) 0 2px 2px 0,rgba(0, 0, 0, .12) 0 1px 5px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: Roboto,sans-serif;
+  font-size: .875rem;
+  font-weight: 500;
+  height: 36px;
+  justify-content: center;
+  letter-spacing: .0892857em;
+  line-height: normal;
+  min-width: 64px;
+  outline: none;
+  overflow: visible;
+  padding: 0 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  will-change: transform,opacity;
+}
+
+.button-85:hover {
+  box-shadow: rgba(0, 0, 0, .2) 0 2px 4px -1px, rgba(0, 0, 0, .14) 0 4px 5px 0, rgba(0, 0, 0, .12) 0 1px 10px 0;
+}
+
+.button-85:disabled {
+  background-color: rgba(0, 0, 0, .12);
+  box-shadow: rgba(0, 0, 0, .2) 0 0 0 0, rgba(0, 0, 0, .14) 0 0 0 0, rgba(0, 0, 0, .12) 0 0 0 0;
+  color: rgba(0, 0, 0, .37);
+  cursor: default;
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.button-85:not(:disabled) {
+  background-color: #007ca9c1;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.button-85:focus {
+  box-shadow: rgba(0, 0, 0, .2) 0 2px 4px -1px, rgba(0, 0, 0, .14) 0 4px 5px 0, rgba(0, 0, 0, .12) 0 1px 10px 0;
 }
 
-.App-link {
-  color: #61dafb;
+.button-85:active {
+  box-shadow: rgba(0, 0, 0, .2) 0 5px 5px -3px, rgba(0, 0, 0, .14) 0 8px 10px 1px, rgba(0, 0, 0, .12) 0 3px 14px 2px;
+  background: #A46BF5;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* greadiet haeart */
